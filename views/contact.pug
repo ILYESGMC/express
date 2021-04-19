@@ -1,0 +1,39 @@
+doctype html
+html
+   head
+      title Contact Us page
+      style
+            include ../style.css
+      link(rel="preconnect",href="https://fonts.gstatic.com")
+      link(href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap",rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap",rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap",rel="stylesheet")
+      script(src="https://kit.fontawesome.com/1194db155d.js",crossorigin="anonymous")
+   body
+    header
+      nav.navBar 
+        ul 
+            li 
+                i(class="fas fa-home")
+                a(href='/' class="navClick") Home 
+            li 
+                i(class="fas fa-address-card")
+                a(href='/contact' class="navClick") Contact us 
+            li 
+                i(class="fas fa-phone")
+                a(href='/services' class="navClick") Our Services 
+    main 
+     div.contact-img
+        h1.contactTitle Contact Us 
+        form.form_tab
+            div
+                input(type="text", id="formfirstname" ,placeholder="First name",class="contact-form")
+            div
+                input(type="text", id="formlastname",placeholder="Last name",class="contact-form")
+            div
+                input(type="email", id="formemail",placeholder="Email",class="contact-form")
+            div
+                input(type="email", id="formsubject",placeholder="Subject",class="contact-form")
+            div
+                textarea(type="text", id="formrequest",placeholder="Write something...",cols="30" ,rows="5",class="contact-form") 
+            button(type="button",class="submit-btn") Send Message 

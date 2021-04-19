@@ -1,0 +1,31 @@
+doctype html
+html
+   head
+      title Our Services page
+      style
+            include ../style.css
+      link(rel="preconnect",href="https://fonts.gstatic.com")
+      link(href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap",rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap",rel="stylesheet")
+      link(href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap",rel="stylesheet")
+      script(src="https://kit.fontawesome.com/1194db155d.js",crossorigin="anonymous")
+   body
+    header
+      nav.navBar
+        ul 
+            li 
+                i(class="fas fa-home")
+                a(href='/' class="navClick") Home 
+            li 
+                i(class="fas fa-address-card")
+                a(href='/contact' class="navClick") Contact us 
+            li 
+                i(class="fas fa-phone")
+                a(href='/services' class="navClick") Our Services
+    main 
+     div.my_services
+        h1.servicetitle Our Services
+        h1 &#9830; Creation of websites and web applications
+        h1 &#9830; Creation of mobile applications
+        h1 &#9830; Creation of video games
+        h1 &#9830; Desktop software creation 
